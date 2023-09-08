@@ -57,8 +57,17 @@ h2{
 
 
 /* añadir separacion visual a la imagenes */
-#ships div img{
+#ships div div img{
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(35, 48, 53);
 }
 
+
+/* añadir animacion a los objetos
+ para recalcar que son objetos iterativos */
+#ships div div:hover img, #ships div div:hover h2{
+    transition: all .10 ease;
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+    text-shadow: 0 0 1px;
+}
