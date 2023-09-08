@@ -8,7 +8,7 @@ function crearGaleria(idContenedor, carpetaImagenes) {
 
                 // Crear la estructura HTML para cada imagen
                 var divContenedor = $("<div></div>");
-                var h2Contenedor = $("<div><h2></h2></div>");
+                var h2Contenedor = $("<div><h2 class='titulo-elemento'></h2></div>");
                 var imgContenedor = $("<div><img src='' alt='' srcset=''></div>");
                 
                 // Configurar el contenido

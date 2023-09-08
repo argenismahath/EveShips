@@ -55,6 +55,10 @@ h2{
     align-items: center;
 }
 
+#ships div div div{
+    pointer-events: none;
+
+}
 
 /* añadir separacion visual a la imagenes */
 #ships div div img{
@@ -70,4 +74,12 @@ h2{
     transform: scale(1.2, 1.2);
     cursor: pointer;
     text-shadow: 0 0 1px;
+}
+
+
+
+/* ################################################### */
+
+#information-card{
+
 }
