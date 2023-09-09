@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: url(/imgs/backGround.jpg) center center #000 no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-h2{
+
+h2 {
     color: #fff;
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 1px;
 }
 
-#main-header{
+#main-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +29,7 @@ h2{
     background-color: #000;
 }
 
-#main-header img{
+#main-header img {
     position: absolute;
     top: 30px;
     left: 78px;
@@ -36,32 +37,46 @@ h2{
     height: 47px;
 }
 
-#ships{
+#ships {
     width: 90%;
     margin: 0 auto;
     margin-top: 150px;
 }
 
-#ships div{
+#ships div {
     display: grid;
-    grid-template-columns: repeat(4, 24%);
+    grid-template-columns: repeat(3, 30%);
     margin-bottom: 50px;
 }
 
-#ships div div{
+@media (max-width: 767px) {
+    #ships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ships div {
+        grid-template-columns: repeat(1, 70%);
+        justify-content: center;
+    }
+}
+
+#ships div div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#ships div div div{
+#ships div div div {
     pointer-events: none;
 
 }
 
 /* añadir separacion visual a la imagenes */
-#ships div div img{
+#ships div div img {
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(35, 48, 53);
 }
@@ -69,7 +84,8 @@ h2{
 
 /* añadir animacion a los objetos
  para recalcar que son objetos iterativos */
-#ships div div:hover img, #ships div div:hover h2{
+#ships div div:hover img,
+#ships div div:hover h2 {
     transition: all .10 ease;
     transform: scale(1.2, 1.2);
     cursor: pointer;
@@ -80,6 +96,43 @@ h2{
 
 /* ################################################### */
 
-#information-card{
+#information-card {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: all 1s ease;
+}
 
+#information-card #container-card {
+    display: grid;
+    grid-template-rows: 50px, 40%, 30%;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    background-color: #21282e8f;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #afa2a2;
+    backdrop-filter: blur(5px);
+}
+
+#information-card #container-card h2 {
+    text-align: center;
+    line-height: 50px;
+}
+
+#information-card #container-card img {
+    margin: 0 auto;
+}
+
+#information-card #container-card p {
+    width: 90%;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    margin: 0 auto;
 }
