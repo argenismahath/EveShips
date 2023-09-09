@@ -28,6 +28,6 @@ function crearGaleria(idContenedor, carpetaImagenes) {
 }
 
 // Llamar a la función para cada contenedor específico
-crearGaleria("#fragatas", "/tree/ships/imgs/Fragatas");
+crearGaleria("#fragatas", "https://github.com/argenismahath/EveShips/tree/ships/imgs/Fragatas");
 crearGaleria("#cruceros", "/imgs/Cruceros");
 crearGaleria("#acorazado", "/imgs/Acorazados");
