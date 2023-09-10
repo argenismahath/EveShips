@@ -1,4 +1,5 @@
 function crearGaleria(idContenedor, carpetaImagenes) {
+    //fill data
     $.ajax({
         url: carpetaImagenes,
         success: function(data) {
