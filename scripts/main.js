@@ -30,5 +30,5 @@ function crearGaleria(idContenedor, carpetaImagenes) {
 
 // Llamar a la función para cada contenedor específico
 crearGaleria("#fragatas", "EveShips/../imgs/Fragatas");
-crearGaleria("#cruceros", "/imgs/Cruceros");
+crearGaleria("#cruceros", "imgs/Cruceros");
 crearGaleria("#acorazado", "/imgs/Acorazados");
